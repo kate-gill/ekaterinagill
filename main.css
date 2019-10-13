@@ -1,0 +1,350 @@
+/* main */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  color: #292D33;
+}
+
+/* sections */
+
+#home {
+  text-align: center;
+  padding-top: 40vh;
+  margin-top: -4rem;
+  height: 90vh; 
+  width: 80%;
+  background: url(images/background.jpeg);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+#projects, 
+#contactme {
+  text-align: center;
+  padding-top: 15vh;
+  width: 85%;
+}
+
+#aboutme {
+  text-align: center;
+  padding-top: 15vh;
+  width: 80%;
+  min-height: 84vh;
+}
+
+#projects {
+  width: 93% !important;
+}
+
+#contact {
+  margin: auto;
+  width: 90%;
+}
+
+.contactContainer {
+  padding: 0;
+}
+
+.aboutCard {
+  max-width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* navbar */
+
+.myNavbar {
+  text-align: center;
+}
+
+li {
+  font-size: 19px;
+}
+
+nav a:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+a:hover:after {
+  width: 100%;
+  background: #ffe924;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* buttons */
+
+button.navbar-toggler {
+  outline: none;
+}
+
+button a:hover {
+  outline: none;
+  text-decoration: none;
+  color: #565a60;
+}
+
+.myBtn {
+  background-color: white;
+  color: #292D33;
+  border: 1px solid #dfdfdf;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.myBtn:hover {
+  background-color: #FFF175;
+}
+
+.myBtn:focus, .myBtn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+
+/* photo */
+
+#photo {
+  margin-top: 15px;
+  height: 307px;
+  width: 270px;
+  border-radius: 20%;
+}
+
+/* grid */
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+
+.gridItem {
+  margin: 15px;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/* additional */
+
+.card {
+  margin-top: 50px;
+}
+
+.bigIcon {
+  padding-bottom: 5px;
+}
+
+#center {
+  margin: auto;
+  margin-top: 5%;
+  border: solid 1px #dfdfdf;
+  width: 75%;
+  padding: 0;
+}
+
+.contactLi {
+  padding: 20px;
+}
+
+/* text */
+
+.myTitle {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.textCard {
+  padding-top: 35px;
+}
+
+.titleAbout {
+  padding-bottom: 25px;
+}
+
+.card-text {
+  min-height: 216px;
+}
+
+/* hr styling */
+
+hr.line {
+  border: 0;
+  height: 1px;
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* icon containers(grid) */
+
+.iconContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.iconContainer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.iconContainer3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* icons */
+
+.contactIcon {
+  color: #1172c7;
+}
+
+.githubIcon {
+  color: #3c3636;
+}
+
+.githubIcon:hover, .contactIcon:hover {
+  color: #565a60;
+}
+
+.fa-html5 {
+  color: #e44d26;
+}
+
+.fa-css3-alt {
+  color: #3596d0;
+}
+
+.fa-bootstrap {
+  color: #5e3f8a;
+}
+
+.fa-js-square {
+  color: #f7e018;
+}
+
+.fa-react {
+  color: #61dafb;
+}
+
+.fa-database {
+  color: #e48e00;
+}
+
+.fa-php {
+  color: #787cb5;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+/* footer */
+
+.footer {
+  margin-top: 197.5px;
+  text-align: center;
+  height: 50px;
+  background-color: #f8f9fa;
+}
+
+#pFooter {
+  padding-top: 12px;
+}
+
+/* @media */
+
+@media screen and (max-width: 1510px) {
+
+  .card-text {
+    min-height: 240px;
+  }
+
+}
+
+@media screen and (max-width: 1450px) {
+
+  .containerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-text {
+    min-height: 170px !important;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  .aboutGrid  {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+  #contactme {
+    padding-top: 18.5vh;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .card-text {
+    min-height: 190px !important;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .containerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  #aboutme {
+    width: 100%;
+  }
+
+  .card-text {
+    min-height: 140px !important;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .card-text {
+    min-height: 170px !important;
+  }
+
+}

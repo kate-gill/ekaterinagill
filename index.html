@@ -1,9 +1,260 @@
 <!DOCTYPE html>
 <html>
-<head>    
-    <title>My webpage</title>
+<head>
+    <title>Portfolio | Ekaterina Gill</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/title-icon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type="text/css" href='main.css'>
+
 </head>
-<body>
-    <p>Testing</p>
+<body data-spy="scroll" data-target=".navbar" data-offset="250">
+    
+    <div class="content">   
+    
+        <!-- Navbar --> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-center">
+       
+            <div class="myNavbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                                 
+                <div id="navbarMenu" class="collapse navbar-collapse">            
+                    <ul class="navbar-nav">
+                        <li><a class="active nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#projects">Projects</a></li>
+                        <li><a class="nav-link" href="#aboutme">About Me</a></li>
+                        <li><a class="nav-link" href="#contactme">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>                
+        </nav>
+      
+        <!-- All components --> 
+        <section class="container-fluid">
+            <div class="row align-items-center">
+
+                <!-- Home / opening page --> 
+                <div class="col-xl-12">
+                    <div id="home" class="container-fluid">
+                        <h1 class="display-4">Hey there, I'm Kate</h1>                        
+                        <hr class="line">
+                        <p>I'm a Junior Web Developer located in London, UK</p>
+                        <a href="https://github.com/kate-gill" target="_blank"><i class="githubIcon fab fa-github" style="font-size:36px"></i></a>
+                    </div>    
+                </div>           
+ 
+                <!-- Projects --> 
+                <div class="col-xl-12">
+                    <div id="projects" class="container-fluid">
+                        <h1>Projects</h1>
+                        <hr class="line">
+                        <div class="row containerGrid">
+
+                            <!-- Project 1 --> 
+                            <div class="gridItem">
+                                <div class="card">
+                                    <!-- Project screenshot-->
+                                    <img src="images/1.png" class="card-img-top" alt="project1">
+                                    <!-- Project description -->
+                                    <div class="card-body">
+                                        <h5>BookShelf</h5>
+                                        <p class="card-text">App for searching books by title or author. Data comes from Google Books API. This app was built in React JS with React Hooks and React Router. Designed with the use of CSS Grid Layout and Flexbox. All pages are mobile responsive.
+                                        </p>
+                                        <div>
+                                            <button class="myBtn"><a href="https://kate-gill.github.io/bookshelf/#/" target="_blank">Demo</a></button>
+                                            <button class="myBtn"><a href="https://github.com/kate-gill/bookshelf" target="_blank">Source Code</a></button>
+                                        </div>                                        
+                                    </div>
+                                    <!-- Project technologies-->
+                                    <div class="iconContainer card-footer bg-transparent">
+                                        <!-- icons -->                                         
+                                        <div>
+                                            <i class="fab fa-html5" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-css3-alt" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-js-square" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-react" style="font-size:50px"></i>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 --> 
+                            <div class="gridItem">
+                                <div class="card">
+                                    <!-- Project screenshot-->
+                                    <img src="images/2.png" class="card-img-top" alt="project2">
+                                    <!-- Project description -->
+                                    <div class="card-body">
+                                        <h5>Pocket Budget</h5>
+                                        <p class="card-text">App for managing personal finances. Accepts expense/income entries and calculates totals. Percentage spent is shown on the progress bar. Application is built in React JS with React Hooks (e.g. React Context) and has local storage. Styled with CSS Grid Layout and Flexbox. App is mobile responsive.
+                                        </p>
+                                        <div>
+                                            <button class="myBtn"><a href="https://kate-gill.github.io/pocket-budget/" target="_blank">Demo</a></button>
+                                            <button class="myBtn"><a href="https://github.com/kate-gill/pocket-budget" target="_blank">Source Code</a></button>
+                                        </div>
+                                    </div>
+                                    <!-- Project technologies-->
+                                    <div class="iconContainer card-footer bg-transparent">
+                                        <!-- icons -->                                         
+                                        <div>
+                                            <i class="fab fa-html5" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-css3-alt" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-js-square" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-react" style="font-size:50px"></i>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 --> 
+                            <div class="gridItem">
+                                <div class="card">
+                                    <!-- Project screenshot-->
+                                    <img src="images/3.png" class="card-img-top" alt="project3">
+                                    <!-- Project description -->
+                                    <div class="card-body">
+                                        <h5>Sticky Notes Dashboard</h5>
+                                        <p class="card-text">Application for writing digital notes. App offers two themes based on a personal preference (light/dark). App is connected to OpenWeatherMap API which shows current weather forecast. Location can be changed. Built with React Hooks. Mobile responsive. Styled with CSS Grid Layout and Flexbox.
+                                        </p>
+                                        <div>
+                                            <button class="myBtn"><a href="https://kate-gill.github.io/sticky-notes-dashboard/" target="_blank">Demo</a></button>
+                                            <button class="myBtn"><a href="https://github.com/kate-gill/sticky-notes-dashboard" target="_blank">Source Code</a></button>
+                                        </div>
+                                    </div>
+                                    <!-- Project technologies-->
+                                    <div class="iconContainer card-footer bg-transparent">
+                                        <!-- icons -->                                         
+                                        <div>
+                                            <i class="fab fa-html5" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-css3-alt" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-js-square" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-react" style="font-size:50px"></i>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 4 --> 
+                            <div class="gridItem">
+                                <div class="card">
+                                    <!-- Project screenshot-->
+                                    <img src="images/4.png" class="card-img-top" alt="project4">
+                                    <!-- Project description -->
+                                    <div class="card-body">
+                                        <h5>Blog App</h5>
+                                        <p class="card-text">Blog application written in PHP with a connection to MySQL database. App has full CRUD functionality. Users can set up profiles, add posts and comments, like other user's posts and see other user's profiles. Password reset function is built with the use of PHPMailer. Designed with Bootstrap. Mobile responsive.
+                                        </p>
+                                        <div>
+                                            <button class="myBtn"><a href="https://kates-blog-app.herokuapp.com" target="_blank">Demo</a></button>
+                                            <button class="myBtn"><a href="https://github.com/kate-gill/blog-app" target="_blank">Source Code</a></button>
+                                        </div>
+                                    </div>
+                                    <!-- Project technologies-->
+                                    <div class="iconContainer2 card-footer bg-transparent">
+                                        <!-- icons -->                                         
+                                        <div>
+                                            <i class="fab fa-html5" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-css3-alt" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fab fa-bootstrap" style="font-size:48px"></i>
+                                        </div>                                        
+                                        <div>
+                                            <i class="fab fa-php" style="font-size:50px"></i>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-database" style="font-size:45px"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
+
+
+                <!-- About me --> 
+                <div class="col-xl-12">
+                    <div id="aboutme" class="container-fluid">
+                        <h1>About me</h1>
+                        <hr class="line">
+                        <div class="aboutCard card">
+                            <!-- Main body of About me --> 
+                            <div class="card-body">
+                                <div class="aboutGrid row no-gutters">
+                                    <!-- My photo -->  
+                                    <div class="aboutItem">
+                                        <img id="photo" src="images/photo.jpeg" class="card-img" alt="photo">
+                                    </div>
+                                    <!-- My text --> 
+                                    <div class="aboutItem">
+                                        <div class="textCard card-body">
+                                            <h5 class="titleAbout">Hello, world! <span>&#10024;</span></h5>
+                                            <p class="card-text">Hi, I'm Kate. I wrote my first line of code when I was 13. However, later in life I pursued a different path and did my degree in Business Management. After graduating I worked for a global mobile gambling company, a printing start up and in the travel industry as a hotel contractor. However, this year has changed my life as I decided to finally follow my true passion for tech and code. I am a self-taught junior developer who is eager to learn new things every day. I am excited to join a team and work as a Web Developer in a professional environment!                                              
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <!-- Contact me --> 
+                <div class="col-xl-12">
+                    <div id="contactme" class="container-fluid">
+                        <h1>Contact me</h1>
+                        <hr class="line">
+                        <div id="center" class="card">
+                            <div class="contactContainer card-body">
+                                <ul id="contact" class="list-group list-group-flush">
+                                    <li class="contactLi list-group-item"><a href="mailto:kategill@email.com"><i class="contactIcon far fa-envelope" style="font-size:36px"></i></a><br>kategill@email.com</li>
+                                    <li class="contactLi list-group-item"><a href="https://github.com/kate-gill" target="_blank"><i class="contactIcon fab fa-github-square" style="font-size:36px"></i></a><br>GitHub</li>
+                                    <li class="contactLi list-group-item"><a href="images/CV_Ekaterina_Gill.pdf" target="_blank" download><i class="contactIcon far fa-file-pdf" style="font-size:36px"></i></a><br>My CV</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer"><p id="pFooter">&copy; 2019 &#x1F34B; Ekaterina Gill</p></footer>    
+
+    <script src="https://kit.fontawesome.com/78ed2231e4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+
+
