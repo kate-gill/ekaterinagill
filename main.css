@@ -309,13 +309,6 @@ hr.line {
 
 }
 
-@media screen and (max-width: 1050px) {
-
-  #contactme {
-    padding-top: 18.5vh;
-  }
-
-}
 
 @media screen and (max-width: 1000px) {
 
@@ -323,13 +316,63 @@ hr.line {
     min-height: 190px !important;
   }
 
+  .containerGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  p {
+    font-size: x-large;
+    margin-bottom: 0;
+  }
+
+  .aboutCard {
+    max-width: 100%;
+  }
+
+  h5 {
+    font-size: xx-large;
+  }
+
+  #home {
+    height: 85vh;
+  }
+
+  #contactme {
+    padding-top: 0;
+  }
+
+  .myBtn {
+    padding: 10px 30px;
+    font-size: 24px;
+  }
+
+  .nav-link {
+    font-size: xx-large;
+  }
+
+  .navbar-toggler {
+    font-size: -webkit-xxx-large;
+  }
+
+  #contactme {
+    margin-bottom: 20vh;
+  }
+
+  .contactLi {
+    font-size: x-large;
+  }
+
+  .footer {
+    height: 80px;
+  }
+
+  #pFooter {
+    padding-top: 20px;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
-
-  .containerGrid {
-    grid-template-columns: 1fr;
-  }
 
   #aboutme {
     width: 100%;
