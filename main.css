@@ -126,7 +126,7 @@ button a:hover {
 #photo {
   margin-top: 15px;
   height: 307px;
-  width: 270px;
+  width: 250px;
   border-radius: 20%;
 }
 
@@ -187,6 +187,10 @@ button a:hover {
 
 .card-text {
   min-height: 216px;
+}
+
+.openingText {
+  font-size: larger;
 }
 
 /* hr styling */
@@ -338,7 +342,7 @@ hr.line {
   }
 
   #contactme {
-    padding-top: 0;
+    padding-top: 20px;
   }
 
   .myBtn {
@@ -360,6 +364,18 @@ hr.line {
 
   .contactLi {
     font-size: x-large;
+  }
+
+  .githubIcon {
+    padding-top: 25px;
+  }
+
+  .openingText {
+    font-size: x-large;
+  }
+
+  .aboutItem {
+    padding: 25px;
   }
 
   .footer {
